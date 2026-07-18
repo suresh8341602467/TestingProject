@@ -7,17 +7,18 @@ import androidx.compose.runtime.Composable
 
 class MainActivity: ComponentActivity() {
 
+    val message = "suresh"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            myMessage()
+            myMessage(message)
             UserScreen()
         }
     }
 }
 
-fun myMessage(){
+fun myMessage(message:String){
     println(message)
 }
 @Composable
