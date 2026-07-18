@@ -11,11 +11,15 @@ class MainActivity: ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            myMessage()
             UserScreen()
         }
     }
 }
 
+fun myMessage(){
+    println(message)
+}
 @Composable
 fun UserScreen(){
 
