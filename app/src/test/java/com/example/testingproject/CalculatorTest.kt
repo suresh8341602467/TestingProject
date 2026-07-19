@@ -15,7 +15,7 @@ class CalculatorTest {
 
     @Test
     fun check(){
-        val result=calculator.add(10,10)
-        assertEquals(20,result)
+        val result=calculator.add(30,30)
+        assertEquals(60,result)
     }
 }
